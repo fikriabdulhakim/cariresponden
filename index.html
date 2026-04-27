@@ -50,6 +50,93 @@
     .pricing-card:hover{
       transform:translateY(-8px);
     }
+    html, body{
+  overflow-x:hidden;
+}
+
+@media(max-width:768px){
+
+  .hero-mobile{
+    min-height:auto !important;
+    padding-top:120px;
+    padding-bottom:80px;
+  }
+
+  .hero-title{
+    font-size:2.8rem !important;
+    line-height:1.15 !important;
+    text-align:center;
+  }
+
+  .hero-text{
+    font-size:1rem !important;
+    text-align:center;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons a{
+    width:100%;
+  }
+
+  .mobile-center{
+    text-align:center;
+  }
+
+  .mobile-stack{
+    flex-direction:column;
+  }
+
+  .mobile-full{
+    width:100%;
+  }
+
+  .mobile-padding{
+    padding-left:1.25rem !important;
+    padding-right:1.25rem !important;
+  }
+
+  .mobile-card{
+    padding:1.5rem !important;
+    border-radius:1.5rem !important;
+  }
+
+  .mobile-title{
+    font-size:2.2rem !important;
+    line-height:1.2 !important;
+  }
+
+  .mobile-subtitle{
+    font-size:1rem !important;
+  }
+
+  .mobile-hide{
+    display:none !important;
+  }
+
+  .mobile-image{
+    height:220px !important;
+  }
+
+  .mobile-stat{
+    font-size:2rem !important;
+  }
+
+  .mobile-pricing{
+    padding:2rem !important;
+  }
+
+  .mobile-footer{
+    text-align:center;
+  }
+
+  .mobile-social{
+    justify-content:center;
+  }
+
+}
   </style>
 </head>
 
@@ -68,7 +155,7 @@
       </div>
 
       <!-- MENU -->
-      <nav class="hidden md:flex gap-10 text-sm font-medium text-white">
+      <nav class="hidden md:flex gap-10 mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing text-sm font-medium text-white">
         <a href="#fitur" class="hover:text-green-400 transition">Fitur</a>
         <a href="#cara-kerja" class="hover:text-green-400 transition">Cara Kerja</a>
         <a href="#harga" class="hover:text-green-400 transition">Harga</a>
@@ -85,7 +172,7 @@
   </header>
 
   <!-- HERO -->
-  <section class="relative min-h-screen flex items-center overflow-hidden">
+  <section class="hero-mobile relative min-h-screen flex items-center overflow-hidden">
 
     <!-- IMAGE -->
     <div class="absolute inset-0">
@@ -99,7 +186,7 @@
     <div class="absolute inset-0 hero-gradient"></div>
 
     <!-- CONTENT -->
-    <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="relative z-10 max-w-7xl mx-auto mobile-padding grid lg:grid-cols-2 gap-16 items-center">
 
       <!-- LEFT -->
       <div>
@@ -108,7 +195,7 @@
           🚀 Platform Pencarian Responden Terpercaya di Indonesia
         </div>
 
-        <h1 class="text-5xl lg:text-7xl font-black leading-tight mt-8 text-white">
+        <h1 class="hero-title text-5xl lg:text-7xl font-black leading-tight mt-8 text-white">
           Dapatkan Responden
           <span class="text-green-400">
             Berkualitas
@@ -116,14 +203,14 @@
           Dengan Cepat
         </h1>
 
-        <p class="mt-8 text-xl text-gray-300 leading-relaxed">
+        <p class="hero-text mt-8 text-xl text-gray-300 leading-relaxed">
           Solusi untuk mahasiswa, peneliti, startup, dan perusahaan
           yang membutuhkan responden aktif untuk survey, skripsi,
           tesis, market research, dan validasi bisnis.
         </p>
 
         <!-- BUTTONS -->
-        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+        <div class="hero-buttons mt-10 flex flex-col sm:flex-row gap-4">
 
           <a href="#harga"
             class="bg-green-500 hover:bg-green-600 text-white px-8 py-5 rounded-2xl font-black text-center transition glow">
@@ -138,10 +225,10 @@
         </div>
 
         <!-- STATS -->
-        <div class="grid grid-cols-3 gap-8 mt-16 text-white">
+        <div class="grid grid-cols-3 gap-8 mobile-card mobile-card mt-16 text-white">
 
           <div>
-            <h3 class="text-5xl font-black text-green-400">
+            <h3 class="mobile-stat text-5xl font-black text-green-400">
               10K+
             </h3>
 
@@ -151,7 +238,7 @@
           </div>
 
           <div>
-            <h3 class="text-5xl font-black text-green-400">
+            <h3 class="mobile-stat text-5xl font-black text-green-400">
               500+
             </h3>
 
@@ -161,7 +248,7 @@
           </div>
 
           <div>
-            <h3 class="text-5xl font-black text-green-400">
+            <h3 class="mobile-stat text-5xl font-black text-green-400">
               98%
             </h3>
 
@@ -175,7 +262,7 @@
       </div>
 
       <!-- RIGHT -->
-      <div class="hidden lg:block relative">
+      <div class="hidden lg:block relative mobile-hide">
 
         <img
           src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
@@ -240,10 +327,10 @@
 
     <div class="max-w-7xl mx-auto px-6">
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mobile-card mobile-card">
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 card-hover">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100 card-hover">
 
           <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl">
             ⚡
@@ -260,7 +347,7 @@
         </div>
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 card-hover">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100 card-hover">
 
           <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl">
             🎯
@@ -277,7 +364,7 @@
         </div>
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 card-hover">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100 card-hover">
 
           <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl">
             📈
@@ -294,7 +381,7 @@
         </div>
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 card-hover">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100 card-hover">
 
           <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl">
             🔒
@@ -329,7 +416,7 @@
 
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-10 mt-20">
+      <div class="grid lg:grid-cols-3 gap-10 mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing mt-20">
 
         <!-- CARD -->
         <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
@@ -338,7 +425,7 @@
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop"
             class="h-64 w-full object-cover">
 
-          <div class="p-8">
+          <div class="p-8 mobile-card mobile-card">
 
             <div class="w-14 h-14 rounded-2xl bg-green-600 text-white flex items-center justify-center font-black text-2xl">
               1
@@ -363,7 +450,7 @@
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
             class="h-64 w-full object-cover">
 
-          <div class="p-8">
+          <div class="p-8 mobile-card mobile-card">
 
             <div class="w-14 h-14 rounded-2xl bg-green-600 text-white flex items-center justify-center font-black text-2xl">
               2
@@ -388,7 +475,7 @@
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop"
             class="h-64 w-full object-cover">
 
-          <div class="p-8">
+          <div class="p-8 mobile-card mobile-card">
 
             <div class="w-14 h-14 rounded-2xl bg-green-600 text-white flex items-center justify-center font-black text-2xl">
               3
@@ -419,20 +506,20 @@
 
       <div class="text-center">
 
-        <h2 class="text-5xl font-black">
+        <h2 class="mobile-title text-5xl font-black">
           Paket Harga
         </h2>
 
-        <p class="mt-5 text-gray-400 text-xl">
+        <p class="mobile-subtitle mt-5 text-gray-400 text-xl">
           Harga fleksibel sesuai kebutuhan responden Anda.
         </p>
 
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-8 mt-20">
+      <div class="grid lg:grid-cols-3 gap-8 mobile-card mobile-card mt-20">
 
         <!-- STARTER -->
-        <div class="bg-[#101f18] rounded-3xl p-10 border border-white/10 pricing-card">
+        <div class="bg-[#101f18] rounded-3xl p-10 mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing border border-white/10 pricing-card">
 
           <h3 class="text-3xl font-black">
             Starter
@@ -466,7 +553,7 @@
         </div>
 
         <!-- POPULAR -->
-        <div class="green-gradient rounded-3xl p-10 relative shadow-2xl pricing-card">
+        <div class="green-gradient rounded-3xl p-10 mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing relative shadow-2xl pricing-card">
 
           <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-black px-5 py-2 rounded-full text-sm font-black">
             PALING POPULER
@@ -505,7 +592,7 @@
         </div>
 
         <!-- ENTERPRISE -->
-        <div class="bg-[#101f18] rounded-3xl p-10 border border-white/10 pricing-card">
+        <div class="bg-[#101f18] rounded-3xl p-10 mobile-pricing mobile-pricing mobile-pricing mobile-pricing mobile-pricing border border-white/10 pricing-card">
 
           <h3 class="text-3xl font-black">
             Enterprise
@@ -558,10 +645,10 @@
 
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-8 mt-20">
+      <div class="grid lg:grid-cols-3 gap-8 mobile-card mobile-card mt-20">
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100">
 
           <div class="flex items-center gap-4">
 
@@ -588,7 +675,7 @@
         </div>
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100">
 
           <div class="flex items-center gap-4">
 
@@ -615,7 +702,7 @@
         </div>
 
         <!-- CARD -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+        <div class="bg-white rounded-3xl p-8 mobile-card mobile-card shadow-lg border border-gray-100">
 
           <div class="flex items-center gap-4">
 
@@ -650,7 +737,7 @@
   <!-- FOOTER -->
   <footer class="bg-[#07120d] text-white py-16">
 
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+    <div class="max-w-7xl mx-auto mobile-padding grid md:grid-cols-4 gap-12 mobile-footer">
 
       <!-- BRAND -->
       <div>
@@ -705,7 +792,7 @@
           Ikuti Kami
         </h4>
 
-        <div class="flex gap-4">
+        <div class="flex gap-4 mobile-social">
 
           <a href="#"
             class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center hover:bg-green-500 transition">
