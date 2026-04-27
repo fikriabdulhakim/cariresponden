@@ -1,0 +1,406 @@
+<!-- TAMBAHKAN DI <head> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<style>
+  html, body{
+    overflow-x:hidden;
+  }
+
+  .mobile-padding{
+    padding-left:1.25rem;
+    padding-right:1.25rem;
+  }
+
+  @media(max-width:768px){
+
+    h1{
+      line-height:1.15 !important;
+    }
+
+    .hero-title{
+      font-size:2.8rem !important;
+    }
+
+    .section-title{
+      font-size:2.2rem !important;
+      line-height:1.2;
+    }
+
+    .mobile-stack{
+      flex-direction:column !important;
+    }
+
+    .mobile-center{
+      text-align:center !important;
+    }
+
+    .mobile-full{
+      width:100% !important;
+    }
+
+    .mobile-gap{
+      gap:1rem !important;
+    }
+
+    .mobile-card{
+      border-radius:24px !important;
+      padding:1.5rem !important;
+    }
+
+    .mobile-image{
+      height:220px !important;
+    }
+
+    .mobile-hide{
+      display:none !important;
+    }
+
+    .mobile-nav{
+      padding-top:1rem;
+      padding-bottom:1rem;
+    }
+
+    .mobile-button{
+      width:100%;
+      justify-content:center;
+      display:flex;
+      align-items:center;
+    }
+
+    .mobile-pricing{
+      padding:2rem !important;
+    }
+
+    .mobile-footer{
+      text-align:center;
+    }
+  }
+</style>
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#07120d]/95 backdrop-blur border-b border-white/10">
+
+  <div class="max-w-7xl mx-auto mobile-padding mobile-nav">
+
+    <div class="flex items-center justify-between">
+
+      <!-- LOGO -->
+      <div class="flex items-center gap-3">
+
+        <img
+          src="logo.png"
+          alt="cariresponden.id"
+          class="h-11 md:h-14 object-contain">
+
+      </div>
+
+      <!-- DESKTOP MENU -->
+      <nav class="hidden lg:flex gap-10 text-sm font-medium text-white">
+        <a href="#fitur" class="hover:text-green-400 transition">Fitur</a>
+        <a href="#cara-kerja" class="hover:text-green-400 transition">Cara Kerja</a>
+        <a href="#harga" class="hover:text-green-400 transition">Harga</a>
+        <a href="#testimoni" class="hover:text-green-400 transition">Testimoni</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#harga"
+        class="bg-green-500 hover:bg-green-600 text-white px-4 md:px-6 py-3 rounded-xl font-bold transition text-sm md:text-base">
+        Hitung Harga
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center overflow-hidden pt-32 md:pt-0">
+
+  <!-- BACKGROUND -->
+  <div class="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop"
+      class="w-full h-full object-cover"
+      alt="Hero">
+  </div>
+
+  <div class="absolute inset-0 hero-gradient"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-7xl mx-auto mobile-padding grid lg:grid-cols-2 gap-14 items-center">
+
+    <!-- LEFT -->
+    <div class="mobile-center">
+
+      <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 px-5 py-2 rounded-full text-green-300 text-sm">
+        🚀 Platform Pencarian Responden Terpercaya
+      </div>
+
+      <h1 class="hero-title text-5xl lg:text-7xl font-black leading-tight mt-8 text-white">
+
+        Dapatkan Responden
+
+        <span class="text-green-400">
+          Berkualitas
+        </span>
+
+        Dengan Cepat
+
+      </h1>
+
+      <p class="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+        Solusi untuk mahasiswa, peneliti, startup, dan perusahaan
+        yang membutuhkan responden aktif untuk survey, skripsi,
+        tesis, market research, dan validasi bisnis.
+      </p>
+
+      <!-- BUTTON -->
+      <div class="mt-10 flex mobile-stack mobile-gap">
+
+        <a href="#harga"
+          class="mobile-button bg-green-500 hover:bg-green-600 text-white px-8 py-5 rounded-2xl font-black transition glow">
+          📊 Hitung Harga
+        </a>
+
+        <a href="#cara-kerja"
+          class="mobile-button border border-white/20 hover:bg-white/10 text-white px-8 py-5 rounded-2xl font-bold transition">
+          ▶ Cara Kerja
+        </a>
+
+      </div>
+
+      <!-- STATS -->
+      <div class="grid grid-cols-3 gap-4 md:gap-8 mt-14 text-white">
+
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-4 md:p-6">
+          <h3 class="text-3xl md:text-5xl font-black text-green-400">
+            10K+
+          </h3>
+
+          <p class="text-gray-400 mt-2 text-sm md:text-base">
+            Responden Aktif
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-4 md:p-6">
+          <h3 class="text-3xl md:text-5xl font-black text-green-400">
+            500+
+          </h3>
+
+          <p class="text-gray-400 mt-2 text-sm md:text-base">
+            Survey Selesai
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-4 md:p-6">
+          <h3 class="text-3xl md:text-5xl font-black text-green-400">
+            98%
+          </h3>
+
+          <p class="text-gray-400 mt-2 text-sm md:text-base">
+            Kepuasan
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="relative mt-10 lg:mt-0">
+
+      <img
+        src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-[28px] shadow-2xl w-full object-cover"
+        alt="Woman">
+
+      <!-- FLOAT CARD -->
+      <div class="absolute left-1/2 -translate-x-1/2 md:left-6 md:translate-x-0 bottom-4 md:bottom-6 bg-white rounded-3xl shadow-2xl p-4 md:p-5 w-[90%] md:w-80">
+
+        <div class="flex items-center gap-3">
+
+          <img
+            src="logo.png"
+            class="h-12 md:h-16"
+            alt="logo">
+
+          <div>
+            <h3 class="font-black text-xl md:text-2xl text-green-700">
+              cari
+            </h3>
+
+            <p class="font-bold text-gray-700 text-sm md:text-base">
+              responden.id
+            </p>
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-2 mt-5">
+
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            class="w-9 h-9 rounded-full border-2 border-white">
+
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            class="w-9 h-9 rounded-full border-2 border-white -ml-3">
+
+          <img
+            src="https://randomuser.me/api/portraits/women/65.jpg"
+            class="w-9 h-9 rounded-full border-2 border-white -ml-3">
+
+          <div class="ml-2">
+            <p class="font-semibold text-xs md:text-sm">
+              Dipercaya ratusan peneliti
+            </p>
+
+            <p class="text-[11px] md:text-xs text-gray-500">
+              di seluruh Indonesia
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRICING -->
+<section id="harga" class="py-24 dark-section text-white">
+
+  <div class="max-w-7xl mx-auto mobile-padding">
+
+    <div class="text-center">
+
+      <h2 class="section-title text-5xl font-black">
+        Paket Harga
+      </h2>
+
+      <p class="mt-5 text-gray-400 text-lg md:text-xl">
+        Harga fleksibel sesuai kebutuhan responden Anda.
+      </p>
+
+    </div>
+
+    <!-- CARDS -->
+    <div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+      <!-- CARD -->
+      <div class="bg-[#101f18] rounded-3xl mobile-pricing p-10 border border-white/10 pricing-card">
+
+        <h3 class="text-3xl font-black">
+          Starter
+        </h3>
+
+        <p class="mt-3 text-gray-400">
+          Untuk mahasiswa & skripsi
+        </p>
+
+        <div class="mt-8">
+          <span class="text-6xl md:text-7xl font-black text-green-400">
+            390rb
+          </span>
+        </div>
+
+        <p class="text-gray-400 mt-3">
+          30 responden
+        </p>
+
+        <ul class="mt-10 space-y-4 text-gray-300">
+          <li>✔ Responden aktif</li>
+          <li>✔ Distribusi survey</li>
+          <li>✔ Support WhatsApp</li>
+        </ul>
+
+        <button
+          class="w-full mt-10 bg-green-500 hover:bg-green-600 py-4 rounded-2xl font-black transition">
+          Pilih Paket
+        </button>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="green-gradient rounded-3xl mobile-pricing p-10 relative shadow-2xl pricing-card">
+
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-black px-5 py-2 rounded-full text-xs md:text-sm font-black">
+          PALING POPULER
+        </div>
+
+        <h3 class="text-3xl font-black">
+          Professional
+        </h3>
+
+        <p class="mt-3 text-green-100">
+          Untuk riset & startup
+        </p>
+
+        <div class="mt-8">
+          <span class="text-6xl md:text-7xl font-black">
+            1,1jt
+          </span>
+        </div>
+
+        <p class="text-green-100 mt-3">
+          100 responden
+        </p>
+
+        <ul class="mt-10 space-y-4">
+          <li>✔ Target spesifik</li>
+          <li>✔ Dashboard realtime</li>
+          <li>✔ Prioritas distribusi</li>
+          <li>✔ Support prioritas</li>
+        </ul>
+
+        <button
+          class="w-full mt-10 bg-white text-black hover:bg-gray-100 py-4 rounded-2xl font-black transition">
+          Pilih Paket
+        </button>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-[#101f18] rounded-3xl mobile-pricing p-10 border border-white/10 pricing-card">
+
+        <h3 class="text-3xl font-black">
+          Enterprise
+        </h3>
+
+        <p class="mt-3 text-gray-400">
+          Untuk perusahaan & riset besar
+        </p>
+
+        <div class="mt-8">
+          <span class="text-6xl md:text-7xl font-black text-green-400">
+            3,5jt
+          </span>
+        </div>
+
+        <p class="text-gray-400 mt-3">
+          500+ responden
+        </p>
+
+        <ul class="mt-10 space-y-4 text-gray-300">
+          <li>✔ Unlimited campaign</li>
+          <li>✔ Custom target</li>
+          <li>✔ Dedicated support</li>
+          <li>✔ Konsultasi khusus</li>
+        </ul>
+
+        <button
+          class="w-full mt-10 bg-green-500 hover:bg-green-600 py-4 rounded-2xl font-black transition">
+          Hubungi Kami
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
